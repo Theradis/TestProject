@@ -21,6 +21,9 @@ public class TestClass {
 			exp.printStackTrace();
 		}
 		
+		finally {
+			System.out.println("I am inside Finally block");
+		}
 	}
 
 }
