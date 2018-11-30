@@ -5,29 +5,22 @@ public class TestClass {
 		// TODO Auto-generated method stub
 
 		//call the demo()
-		demo();
+		try {
+			demo();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
-	public static void demo() {
-		//Exception Handling Example
-				try {
-
-					
-					System.out.println("Say Hello World!");
-							//Code that creates Exception
-							int i = 1/0;
-					System.out.println("End of execution.");
-					
-				}
-				catch(Exception exp) {
-					System.out.println("This is inside a Catch Block");
-					System.out.println(exp.getMessage() );
-					System.out.println("Cause is : "+exp.getCause());
-					exp.printStackTrace();
-				}
+	public static void demo() throws Exception {
+		
+		System.out.println("Say Hello World!");
+		//Code that creates Exception
+		int i = 1/0;
+		System.out.println("End of execution.");
+		
+		
 				
-				finally {
-					System.out.println("I am inside Finally block");
-				}
 	}
 
 }
